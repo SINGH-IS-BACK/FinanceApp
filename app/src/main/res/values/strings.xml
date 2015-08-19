@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Finance</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="heading">India Finance</string>
+    <string name="description">Make Informed Decisions</string>
+
+    <string name="user_desc">Headcount Dashboard</string>
+    <string name="travel_desc">Travel Report</string>
+    <string name="report_desc">Expense Report</string>
+
+</resources>

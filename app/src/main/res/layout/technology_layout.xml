@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_extra_margin"
+    android:paddingBottom="@dimen/activity_vertical_extra_margin"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/activity_vertical_extra_margin"
+        android:paddingBottom="@dimen/activity_vertical_extra_margin"
+        android:weightSum="3"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/user_desc"
+                android:paddingTop="@dimen/activity_vertical_extra_margin"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center"
+                android:src="@drawable/users_group"
+                />
+
+            <TextView android:text="@string/user_desc" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_desc"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textColor="@color/finance_blue"
+                android:paddingBottom="@dimen/activity_vertical_extra_margin"
+                android:textSize="24sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/travel"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_above="@+id/travel_desc"
+                android:paddingBottom="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/travel_reporting"
+                />
+
+            <TextView android:text="@string/travel_desc" android:layout_width="fill_parent"
+                android:id="@+id/travel_desc"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/finance_red"
+                android:paddingBottom="@dimen/activity_vertical_extra_margin"
+                android:textSize="24sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/report"
+                android:layout_width="match_parent"
+                android:paddingTop="@dimen/activity_vertical_extra_margin"
+                android:gravity="center_horizontal"
+                android:layout_above="@+id/report_desc"
+                android:paddingBottom="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seo_report"
+                />
+
+            <TextView android:text="@string/report_desc" android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/report_desc"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textColor="@color/finance_green"
+                android:textSize="24sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
