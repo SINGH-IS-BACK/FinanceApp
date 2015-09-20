@@ -19,8 +19,16 @@ public class WebViewActivity extends ActionBarActivity {
         }
 
         if(url.equals("https://www.grapevinesurveys.com/pdf/report_samples_3dchar.pdf")){
+
+            String doc="<iframe src='http://docs.google.com/viewer?url=http://www.grapevinesurveys.com/pdf/report_samples_3dchar.pdf&embedded=true' width='100%' height='100%' style='border: none;'></iframe>";
+
             WebView browser = (WebView) findViewById(R.id.webview);
-            browser.loadUrl("https://docs.google.com/gview?embedded=true&url=" + url);
+            //browser.loadUrl("https://docs.google.com/gview?embedded=true&url=" + url);
+            //WebView  wv = (WebView)findViewById(R.id.webview);
+            browser.getSettings().setJavaScriptEnabled(true);
+            //wv.getSettings().setPluginsEnabled(true);
+            browser.getSettings().setAllowFileAccess(true);
+            browser.loadUrl(doc);
 
         }
         else {

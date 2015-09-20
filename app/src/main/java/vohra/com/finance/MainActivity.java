@@ -9,6 +9,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+
 
 public class MainActivity extends Activity {
 
@@ -16,6 +19,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+            Parse.initialize(this, "SpW9gwOFv56qgVG1rqXG2hGzYv062ZMPOtCO2wJI", "m5GBXB9ycfBdz15o8MfsDEfYekmKk1UntIkdpJFk");
+            ParseInstallation.getCurrentInstallation().saveInBackground();
 
         Button TS = (Button) findViewById(R.id.TS);
         TS.setOnClickListener(new View.OnClickListener() {
